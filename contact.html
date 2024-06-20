@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_portfolio.css">
+    <title>Portfolio_education</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .aboutme{
+            padding-top: 40px;
+            padding-right: 20px;
+        }
+        .speciallist{
+            margin-top: 0px;
+
+
+        }
+        .description{
+            /* overflow-x: hidden;
+            overflow-y: auto; */
+            text-align: justify;
+            border: solid ;
+            padding: 10px;
+            /* height: 350px; */
+            display: flex;
+            border: 0;
+
+            
+        }
+       
+        .speciallist{
+            font-size: 30px;
+            color: rgb(136, 136, 214);
+            
+        }
+        .aboutme h2{
+            margin-top: 20px;
+            
+        }
+        .description form{
+            display: flex;
+            flex-direction: column;
+            border: solid;
+            /* height: 310px; */
+            width: 600px;
+            padding: 20px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: center;
+
+        }
+       
+        
+        .description form textarea,input{
+            height: 30px;
+            
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            background-color:rgb(223, 223, 245); 
+            border-bottom: solid 2px black;
+            /* font-size: 25px; */
+            margin-top: 5px; padding: 10px; font-size: 16px; 
+
+        }
+        .description form button{
+            margin: 20px;
+            padding: 10px;
+            font-size: 17px;
+        }
+        .contactme{
+            
+            margin-left: 46px;
+
+            
+            margin-top: 10px;
+
+
+
+        }
+        .contactme h3{
+            margin-bottom: 20px;
+            font-weight: bolder;
+            color: rgb(61, 61, 128); 
+            font-size: 30px;
+            font-weight: lighter;
+
+        }
+        
+        .contactme ul h4{
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-weight: lighter;
+            
+        }
+        .contactme h4:hover{
+            text-decoration: underline;
+            
+        }
+        .contactme button{
+            font-weight: bold;
+            margin-top: 30px;
+            padding: 10px;
+        }
+        .medialogo{
+            margin-top: 20px;
+            display: flex;
+        }
+        /* .medialogo a{
+            
+        } */
+        .medialogo  i{
+            margin-right:15px;
+            font-size: 35px;
+            border-radius: 5px;
+            
+            
+        }
+        .medialogo  i:hover{
+            background-color: rgb(88, 82, 214);
+            /*  */
+        }
+
+
+        /* media */
+
+
+        @media (max-width: 1309px) {
+            body{
+                font-size: 14px;
+            }
+            .menu-btn {
+                display: flex;
+            }
+            .mid {
+                position: static;
+                left: 0;
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+            .mid ul {
+                flex-direction: column;
+            }
+            .mid ul li {
+                padding: 10px;
+            }
+            .mid ul li a {
+                padding: 10px;
+                font-size: 18px;
+            }
+            .left h2 {
+                font-size: 40px;
+            }
+            .right button {
+                height: 60px;
+                width: 60px;
+                font-size: 18px;
+            }
+            .about {
+                flex-direction: column;
+                margin: 20px;
+                
+            
+            }
+            .pic {
+                height: 400px;
+                width: 100%;
+            }
+            .aboutme {
+                padding: 40px;
+                height: fit-content;
+            }
+            .speciallist {
+                font-size: 30px;
+            }
+            .name {
+                font-size: 60px;
+            }
+            .aboutme h2 {
+                margin-top: 60px;
+                font-size: 24px;
+            }
+            .about{
+                height: fit-content;
+            }
+        }
+
+        @media (max-width: 709px) {
+            body{
+                font-size: 14px;
+            }
+            header {
+                flex-direction: column;
+            }
+            .left {
+                margin: 0;
+            }
+            
+            .about {
+                margin: 10px;
+                height: fit-content;
+                text-align: center;
+            }
+            .pic {
+
+                height: 0px;
+            }
+            .aboutme {
+                padding: 20px;
+                
+            }
+            .speciallist {
+                font-size: 24px;
+            }
+            .name {
+                font-size: 40px;
+            }
+            .aboutme h2 {
+                margin-top: 40px;
+                font-size: 20px;
+            }
+            .contactme{
+                display: none;
+            }
+        }
+
+
+
+
+    </style>
+   
+</head>
+<body>
+
+    <header id="main-headerlast">
+        <div class="left">
+            <h2>Smith</h2>
+            <h2>.CV</h2>
+        </div>
+        <div class="menu-btn" id="menu-btn">
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+        </div>
+        <div class="mid" id="navbar">
+            <ul class="midul">
+                <li><a href="index.html">About</a></li>
+               
+
+                <li class="menu-item dropdown">
+                    <a href="skill.html">Skills</a>
+                    
+                </li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                
+                <li><a href="education.html">Education</a></li>
+                <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+               
+                <li style=" border: solid 3px rgb(168, 168, 234);background-color: rgb(69, 73, 197);"><a href="contact.html">Contact</a></li>
+            </ul>
+           
+        </div>
+        
+
+    </header>
+    <main>  
+        <div class="propic">
+            <img src="https://images.playground.com/d4f96683e67442f686289dbc0f50955a.jpeg" alt="" >
+        </div>
+        <div class="about">
+            <div class="perinfo">
+                <div class="pic"></div>
+                <div class="geninfo">
+                    <h1>Genral Information</h1>
+                </div>
+            </div>
+            <div class="aboutme">
+                <div class="speciallist">
+                    What Clients Say
+                </div>
+                <div class="name">
+                    Contact me 
+                </div>
+                <!-- <h2>Institutions</h2> -->
+                <div class="description">
+
+                    <form id="portfolio-form">
+                        <h3>Drop a line</h3>
+                        <!-- <label for="name">Name:</label> -->
+                        <input type="text" id="name" name="name" placeholder="your name" required>
+                        
+                        <!-- <label for="about">About Me:</label> -->
+                        <textarea id="about" name="about" placeholder="email" required></textarea>
+                        
+                        <!-- <label for="achievements">Achievements:</label> -->
+                        <textarea id="achievements" name="achievements" placeholder="subject" required></textarea>
+                        
+                        <!-- <label for="career-goals">Career Goals:</label> -->
+                        <textarea id="career-goals" name="career-goals" placeholder="message" style="height: 100px;" required></textarea>
+                        
+                        <!-- <label for="projects">Projects (separate each project with a comma):</label>
+                        <textarea id="projects" name="projects" required></textarea>
+                        
+                        <label for="education">Education:</label>
+                        <textarea id="education" name="education" required></textarea> -->
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+
+                    <div class="contactme">
+                        <h3>Contact me</h3>
+                        <ul>
+                            <h4>4657 Franklin Avenue, ARCH CAPE</h4>
+                            <h4>+361-883-3218</h4>
+                            <h4>hello@jac-co.com</h4>
+                        </ul>
+                        
+
+                        
+                        <button class="resume">DOWNLOAD RESUME</button>   
+                        <div class="medialogo">
+                            <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                            <!-- <i  class="fa-brands fa-square-facebook" href="facebook.com"></i>
+                            <i href="instagram.com" class="fa-brands fa-square-instagram"></i>
+                            <i href="linkedin.com" class="fa-brands fa-linkedin"></i> -->
+                            
+                        </div>
+
+                    </div>
+
+                    
+                    
+                </div>
+                
+            </div>
+
+            
+        </div>
+        
+    </main>
+   
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, itaque exercitationem perferendis quidem fugit deserunt mollitia tempora ut dolorem quis aspernatur explicabo debitis nulla sequi necessitatibus neque tempore aperiam quam!</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" style="font-size: 25px;"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://instagram.com" style="font-size: 25px;" ><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://linkedin.com" style="font-size: 25px;"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Me</h3>
+                <p>123 Street Name, City, State, 12345</p>
+                <p>Email: j.smith@yahoo.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SmithCV. All rights reserved.Lorem ipsum</p>
+        </div>
+    </footer>
+   
+    <script>
+        document.addEventListener('scroll', function() {
+            const header = document.getElementById('main-headerlast');
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 50) { // Change '50' to the desired scroll position
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

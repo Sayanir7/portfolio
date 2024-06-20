@@ -1,0 +1,437 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900 */
+
+/* .playfair-display-mylan {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    /* font-family: "Audiowide", sans-serif; */
+    
+}
+
+body{
+    background-image: url('https://img.freepik.com/free-vector/abstract-classic-blue-wallpaper_23-2148421852.jpg?size=626&ext=jpg&ga=GA1.1.1616710180.1718807866&semt=ais_user');
+    background-size: cover;
+}
+
+main{
+    width: 100%;
+
+}
+
+header {
+    display:flex;
+    align-items: center;
+    /* margin-top: px; */
+    /* position: fixed; */
+    margin-top: 20px;
+    width: 100%;
+    z-index: 2;
+    transition: background-color 0.5s;
+    /* background-color: white; */
+
+    
+}
+header.scrolled {
+    background-color: #0c0594;
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    padding: 10px;
+}
+
+.left {
+    display: flex;
+    margin-left: 40px;
+    
+}
+.left h2 {
+    color: rgb(0, 3, 52);
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+
+
+.mid {
+    /* background-color: rgb(2, 2, 79); */
+    position: absolute;
+    right: 40px;
+    
+
+}
+.mid ul {
+    display: flex;
+}
+.mid ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    /* border: solid 1px rgb(160, 156, 156); */
+    text-align: center;
+    list-style-type: none
+}
+.mid ul li:hover {
+    /* background-color: rgb(69, 73, 197); */
+    border: solid 3px rgb(168, 168, 234);
+    /* border-radius: 5px; */
+}
+.mid ul li a {
+    text-decoration: none;
+    color: rgb(185, 186, 213);
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+
+.right {
+    position: absolute;
+    right: 50px;
+    padding-block-end: 10px;
+}
+.right button {
+    background-color: rgb(2, 2, 79);
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.propic{
+    position:absolute;
+    top: 104px;
+    left: 18px;
+    z-index: 1;
+}
+.propic img{
+    height: 560px;
+    width: 458px;
+}
+
+
+.about {
+    position: relative;
+    background-image: url('https://img.freepik.com/free-vector/blue-curve-frame-template-vector_53876-111537.jpg?size=626&ext=jpg&ga=GA1.1.1616710180.1718807866&semt=ais_user');
+
+    background-size: cover;
+    top: 0px;
+    margin: 40px;
+    /* width: 100%; */
+    display: flex;
+    height: 652px;
+    /* padding-right: 81px; */
+    
+}
+.perinfo {
+    color: black;
+    /* background-color: rgb(2, 2, 79); */
+}
+.pic {
+    background-image: url('https://i.pinimg.com/736x/90/38/6c/90386cf7a87194974964887f3e8090df.jpg');
+    background-size: cover;
+    height: 560px;
+    width: 460px;
+    
+    
+    /* border-radius: 50%; */
+    /* margin-top: 20px; */
+}
+.geninfo {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    color: rgb(7, 37, 102);
+}
+
+.aboutme {
+    /* background-color: rgb(223, 223, 245); */
+    padding: 80px;
+    
+    /* width:949px; */
+    background-size: cover;
+}
+.speciallist {
+    font-size: 40px;
+    color: rgb(110, 137, 161);
+    margin-top: 20px;
+}
+.name {
+    font-size: 100px;
+    color: rgb(2, 2, 79);
+    font-weight: bolder;
+}
+
+.aboutme h2 {
+    color: rgb(2, 2, 79);
+    margin-top: 120px;
+    font-size: 30px;
+}
+.description {
+    margin-top: 30px;
+    color: rgb(110, 137, 161);
+}
+
+/* Footer */
+
+footer {
+    /* background-color: #333; */
+    color: #fff;
+    padding-bottom: 0;
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+}
+
+.footer-column p,
+.footer-column ul {
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #07035d;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #444;
+    /* margin-top: 20px; */
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+
+/* media queries */
+
+@media (max-width: 1309px) {
+    body{
+        font-size: 14px;
+    }
+    .menu-btn {
+        display: flex;
+    }
+    .mid {
+        position: static;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .mid ul {
+        flex-direction: column;
+    }
+    .mid ul li {
+        padding: 10px;
+    }
+    .mid ul li a {
+        padding: 10px;
+        font-size: 18px;
+    }
+    .left h2 {
+        font-size: 40px;
+    }
+    .right button {
+        height: 60px;
+        width: 60px;
+        font-size: 18px;
+    }
+    .about {
+        flex-direction: column;
+        margin: 20px;
+        
+    
+    }
+    .pic {
+        height: 400px;
+        width: 100%;
+    }
+    .aboutme {
+        padding: 40px;
+        height: fit-content;
+    }
+    .speciallist {
+        font-size: 30px;
+    }
+    .name {
+        font-size: 60px;
+    }
+    .aboutme h2 {
+        margin-top: 60px;
+        font-size: 24px;
+    }
+    .about{
+        height: fit-content;
+    }
+    .propic{
+        display: none;
+    }
+
+
+    /* dropdown */
+
+
+    .dropdown-content{
+        display: none;
+    }
+
+    /* Basic styling for the button */
+    #menu-btn {
+        /* position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 16px; */
+        cursor: pointer;
+    }
+
+    /* Dropdown menu styling */
+    .dropdown-content {
+        display: block;
+        position: fixed;
+        top: 25px; /* Adjust based on button position */
+        right: -250px; /* Start off-screen to the right */
+        background-color: #cccbce;
+        width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 3;
+        border-left: 1px solid #ccc;
+        transition: right 0.3s ease; /* Transition for sliding effect */
+    }
+    .dropdown-content ul li{
+        border-bottom: solid 1px rgb(29, 35, 117);
+        box-shadow: 0px 1px 10px rgb(149, 154, 235);
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Active state for the dropdown menu */
+    .dropdown-content.show {
+        right: 0; /* Move into view */
+    }
+
+}
+
+@media (max-width: 600px) {
+    body{
+        font-size: 14px;
+    }
+    header {
+        flex-direction: column;
+    }
+    .left {
+        margin: 0;
+    }
+    
+    .about {
+        margin: 10px;
+        height: fit-content;
+    }
+    .pic {
+
+        height: 0px;
+    }
+    .aboutme {
+        padding: 20px;
+        
+    }
+    .speciallist {
+        font-size: 24px;
+    }
+    .name {
+        font-size: 40px;
+    }
+    .aboutme h2 {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    .propic{
+        display: none;
+    }
+}
+
+
+/* for menu button */
+
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+    position: fixed;
+    right: 20px;
+}
+.menu-icon {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(2, 2, 79);
+    margin: 6px 0;
+}

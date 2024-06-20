@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_portfolio.css">
+    <title>Portfolio_experience</title>
+    <style>
+                /* General styles for smaller screens */
+        @media (max-width: 1200px) {
+            .about {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .aboutme {
+                font-size: 10px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .copyright{
+                color: blue;
+            }
+            header .midul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header .menu-btn {
+                display: block;
+            }
+
+            header .mid {
+                display: none;
+            }
+
+            header .midul {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .aboutme {
+                font-size: 10px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .copyright{
+                color: blue;
+            }
+            .perinfo {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .geninfo, .pic {
+                width: 100%;
+            }
+
+            .speciallist, .name {
+                margin: 0 auto;
+            }
+
+            .description {
+                width: 100%;
+                padding: 0 10px;
+            }
+
+            .aboutme p {
+                position: static;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .aboutme {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                font-size: 10px;
+            }
+            .copyright{
+                color: blue;
+            }
+            .left h2, .midul li a {
+                font-size: 1.2rem;
+            }
+        
+            .speciallist {
+                font-size: 1rem;
+            }
+
+            .name {
+                font-size: 1.5rem;
+            }
+
+            .description p {
+                font-size: 0.9rem;
+            }
+
+            .aboutme p {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Additional styles for mobile navigation menu */
+        @media (max-width: 1200px) {
+            .menu-btn {
+                display: block;
+                cursor: pointer;
+            }
+
+            #navbar {
+                display: none;
+                position: absolute;
+                background: white;
+                width: 100%;
+                left: 0;
+                top: 60px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .midul li {
+                margin: 15px 0;
+            }
+        }
+
+        #menu-btn.open + #navbar {
+            display: flex;
+        }
+
+
+
+
+    </style>
+    
+</head>
+<body>
+
+    <header>
+        <div class="left">
+            <h2>Smith</h2>
+            <h2>.CV</h2>
+        </div>
+        <div class="menu-btn" id="menu-btn">
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+        </div>
+        <div class="mid" id="navbar">
+            <ul class="midul">
+                <li><a href="index.html">About</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="education.html">Education</a></li>
+                <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- <div class="right">
+            <button>Sign out</button>
+        </div> -->
+    </header>
+    <main>  
+        <div class="about">
+            <div class="perinfo">
+                <div class="pic"></div>
+                <div class="geninfo">
+                    <h1>General Information</h1>
+                </div>
+            </div>
+            <div class="aboutme">
+                <div class="speciallist">
+                    HTML5 Developer
+                </div>
+                <div class="name">
+                    Jeremy Smith
+                </div>
+                <h2>Description</h2>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur. Nam lobortis, erat quis pulvinar dignissim, velit ligula ullamcorper ipsum, at sodales elit odio at velit. Sed a est a quam mattis suscipit. Proin et faucibus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur. Nam lobortis, erat quis pulvinar dignissim, velit ligula ullamcorper ipsum, at sodales elit odio at velit. Sed a est a quam mattis suscipit.</p>
+                </div>
+                <div class="copyright"><p style="color: rgb(146, 146, 195); position: relative; left: -60px; top: 60px;font-size: 17px;">Copyright ©2024 All rights reserved | This template is made with  by Colorlib</p></div>
+                
+            </div>
+        </div>
+    </main>
+   
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

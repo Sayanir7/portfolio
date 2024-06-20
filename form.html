@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { width: 80%; margin: 0 auto; padding: 20px; }
+        form { display: flex; flex-direction: column; }
+        label { margin-top: 10px; }
+        input, textarea { margin-top: 5px; padding: 10px; font-size: 16px; }
+        button { margin-top: 20px; padding: 10px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Portfolio</h1>
+        <form id="portfolio-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="about">About Me:</label>
+            <textarea id="about" name="about" required></textarea>
+            
+            <label for="achievements">Achievements:</label>
+            <textarea id="achievements" name="achievements" required></textarea>
+            
+            <label for="career-goals">Career Goals:</label>
+            <textarea id="career-goals" name="career-goals" required></textarea>
+            
+            <label for="projects">Projects (separate each project with a comma):</label>
+            <textarea id="projects" name="projects" required></textarea>
+            
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" required></textarea>
+            
+            <button type="submit">Generate Portfolio</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('portfolio-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+
+            // Save data to local storage
+            localStorage.setItem('portfolioData', JSON.stringify(data));
+
+            // Redirect to portfolio page
+            window.location.href = 'portfolio.html';
+        });
+    </script>
+</body>
+</html>

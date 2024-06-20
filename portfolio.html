@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { width: 80%; margin: 0 auto; padding: 20px; }
+        .section { margin-bottom: 40px; }
+        h1, h2, h3 { color: #333; }
+        p { color: #555; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="name"></h1>
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p id="about-content"></p>
+        </div>
+        <div class="section" id="achievements">
+            <h2>Achievements</h2>
+            <p id="achievements-content"></p>
+        </div>
+        <div class="section" id="career-goals">
+            <h2>Career Goals</h2>
+            <p id="career-goals-content"></p>
+        </div>
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <ul id="projects-list"></ul>
+        </div>
+        <div class="section" id="education">
+            <h2>Education</h2>
+            <p id="education-content"></p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const data = JSON.parse(localStorage.getItem('portfolioData'));
+            if (data) {
+                document.getElementById('name').innerText = data.name;
+                document.getElementById('about-content').innerText = data.about;
+                document.getElementById('achievements-content').innerText = data.achievements;
+                document.getElementById('career-goals-content').innerText = data['career-goals'];
+                
+                const projectsList = document.getElementById('projects-list');
+                const projects = data.projects.split(',');
+                projects.forEach(project => {
+                    const li = document.createElement('li');
+                    li.innerText = project.trim();
+                    projectsList.appendChild(li);
+                });
+
+                document.getElementById('education-content').innerText = data.education;
+            } else {
+                window.location.href = 'form.html';
+            }
+        });
+    </script>
+</body>
+</html>
